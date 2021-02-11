@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--Emma Haynes 2-10-21-->
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Top 5 Restaurants</a></li>
+                <li><a asp-controller="Home" asp-action="Suggestions">Suggestions</a></li>
+                <li><a asp-controller="Home" asp-action="List">Suggestion List</a></li>
+            </ul>
+        </menu>
+    </header>
+    @RenderBody()
+    <footer>
+        <p>Emma Haynes 2021</p>
+    </footer>
+</body>
+</html>

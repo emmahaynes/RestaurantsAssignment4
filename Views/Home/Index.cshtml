@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Top 5 Restaurants";
+}
+<!--Emma Haynes 2-10-21-->
+
+@model IEnumerable<string>
+
+<p>Top Restaurants in Provo:</p>
+<!--prints out the strings in a list formats-->
+<div class="list-group">
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li class="list-group-item">@i</li>
+        }
+    </ul>
+    <div asp-validation-summary="All"></div>
+</div>
